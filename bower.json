@@ -1,0 +1,21 @@
+{
+  "name": "morph.css",
+  "description": "The Latest Greatest Reset CSS",
+  "main": [
+    "morph.css"
+  ],
+  "ignore": [
+    "node_modules",
+    "test",
+    ".editorconfig",
+    ".gitignore",
+    "package.json"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/internets-inc/morph.css.git"
+  },
+  "authors": [
+    "Tomohiro Kasuga <tk@internets.co.jp>"
+  ]
+}
