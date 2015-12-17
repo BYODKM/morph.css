@@ -12,10 +12,42 @@
 
 - [nondestructive-reset.css](https://github.com/BYODKM/nondestructive-reset.css)
 
-## Install
+## Install morph.css
 
 - Download [master.zip](https://github.com/internets-inc/morph.css/archive/master.zip)
 - or `$ bower install morph.css`
+
+## Usage
+
+### Basics:
+
+You wrote `p` tag, but it looks like `div`.
+
+```html
+<p class="div"></p>
+```
+
+You wrote `a` tag, but it looks like `span`.
+
+```html
+<a href="#" class="span"></a>
+```
+
+### Components:
+
+You can use semantic tags, but they act like non-semantics.
+
+```html
+<div clas="your-component">
+  <ul class="your-component__items div">
+    <li class="your-component__item div">
+      <a href="#" class="your-component__link span">
+
+      </a>
+    </li>
+  </ul>
+</div>
+```
 
 ## Supported Browsers
 
