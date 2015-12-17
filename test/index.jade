@@ -8,32 +8,27 @@ html
     title Test | morph.css
     link(rel="stylesheet" href=normalize)
     link(rel="stylesheet" href=morph)
-    style.
-      body {
-        background-color: gray;
-      }
-      .test {
-        width: 100%;
-        overflow: hidden;
-      }
-      .before,
-      .after {
-        margin: 20px 0;
-        width: 47%;
-        background-color: white;
-      }
-      .before {
-        float: left;
-        margin-right: 1%;
-        margin-left: 2%;
-      }
-      .after {
-        float: right;
-        margin-right: 2%;
-        margin-left: 1%;
-      }
+    style
+      :stylus
+        body
+          background-color gray
+        .test
+          width 100%
+          overflow hidden
+        .before
+        .after
+          margin 20px 0
+          width 47%
+          background-color white
+        .before
+          float left
+          margin-right 1%
+          margin-left 2%
+        .after
+          float right
+          margin-right 2%
+          margin-left 1%
   body
-
     .test
       .before
         h1 h1
@@ -125,9 +120,9 @@ html
     .test
       .before
         button button
-        button button
       .after
         button.span button.span
+        | &nbsp;
         button.label button.label
 
     .test
@@ -135,6 +130,7 @@ html
         label label
       .after
         label.span label.span
+        | &nbsp;
         label.label label.label
 
     .test

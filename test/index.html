@@ -5,30 +5,30 @@
     <title>Test | morph.css</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="../morph.css">
-    <style>
-      body {
-        background-color: gray;
-      }
-      .test {
-        width: 100%;
-        overflow: hidden;
-      }
-      .before,
-      .after {
-        margin: 20px 0;
-        width: 47%;
-        background-color: white;
-      }
-      .before {
-        float: left;
-        margin-right: 1%;
-        margin-left: 2%;
-      }
-      .after {
-        float: right;
-        margin-right: 2%;
-        margin-left: 1%;
-      }
+    <style>body {
+  background-color: #808080;
+}
+.test {
+  width: 100%;
+  overflow: hidden;
+}
+.before,
+.after {
+  margin: 20px 0;
+  width: 47%;
+  background-color: #fff;
+}
+.before {
+  float: left;
+  margin-right: 1%;
+  margin-left: 2%;
+}
+.after {
+  float: right;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+
     </style>
   </head>
   <body>
@@ -139,10 +139,9 @@
     <div class="test">
       <div class="before">
         <button>button</button>
-        <button>button</button>
       </div>
       <div class="after">
-        <button class="span">button.span</button>
+        <button class="span">button.span</button>&nbsp;
         <button class="label">button.label</button>
       </div>
     </div>
@@ -151,7 +150,7 @@
         <label>label</label>
       </div>
       <div class="after">
-        <label class="span">label.span</label>
+        <label class="span">label.span</label>&nbsp;
         <label class="label">label.label</label>
       </div>
     </div>

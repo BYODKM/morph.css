@@ -1,37 +1,30 @@
 .div {
   display: block;
-  cursor: default;
 }
-
 .span {
   display: inline;
-  cursor: default;
 }
-
 .label {
   display: inline-block;
   cursor: pointer;
 }
-
 .div:before,
-.div:after,
 .span:before,
-.span:after,
 .label:before,
+.div:after,
+.span:after,
 .label:after {
   content: none;
   display: inline;
-  cursor: default;
 }
-
 .div,
-.div:before,
-.div:after,
 .span,
-.span:before,
-.span:after,
 .label,
+.div:before,
+.span:before,
 .label:before,
+.div:after,
+.span:after,
 .label:after {
   clear: none;
   float: none;
