@@ -1,6 +1,3 @@
-.div {
-  display: block;
-}
 .span {
   display: inline;
 }
@@ -8,24 +5,27 @@
   display: inline-block;
   cursor: pointer;
 }
-.div:before,
+.div {
+  display: block;
+}
 .span:before,
 .label:before,
-.div:after,
+.div:before,
 .span:after,
-.label:after {
+.label:after,
+.div:after {
   content: none;
   display: inline;
 }
-.div,
 .span,
 .label,
-.div:before,
+.div,
 .span:before,
 .label:before,
-.div:after,
+.div:before,
 .span:after,
-.label:after {
+.label:after,
+.div:after {
   clear: none;
   float: none;
   position: static;
