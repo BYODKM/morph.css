@@ -51,9 +51,9 @@ You can use semantic tags, but they act like non-semantics.
 
 ## Tests
 
-- Level 1: [Against browsers' default stylesheets](test/level-1.html)
-- Level 2: [Against authors' reset stylesheets](test/level-2.html)
-- Level 3: [Against authors' scoped stylesheets](test/level-3.html) (Advanced)
+- Level 1: [Against browsers' default stylesheets](http://internets-inc.github.io/morph.css/test/level-1.html)
+- Level 2: [Against authors' reset stylesheets](http://internets-inc.github.io/morph.css/test/level-2.html)
+- Level 3: [Against authors' scoped stylesheets](http://internets-inc.github.io/morph.css/test/level-3.html) (Advanced)
 
 Advanced test requires [Stylus](http://stylus-lang.com) support. Which is scoped import ability like this:
 
