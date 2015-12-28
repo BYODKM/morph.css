@@ -9,7 +9,7 @@ include ../lib/main
     title #{site}#{title} (Advanced)
     style
       :stylus
-        .scoped
+        .foo
           @import "../src/morph"
 
           h2
@@ -155,14 +155,14 @@ include ../lib/main
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        h1 .scoped h1
-        h2 .scoped h2
-        h3 .scoped h3
-        h4 .scoped h4
-        h5 .scoped h5
-        h6 .scoped h6
+        h1 .foo h1
+        h2 .foo h2
+        h3 .foo h3
+        h4 .foo h4
+        h5 .foo h5
+        h6 .foo h6
       +div(class="__after")
         h1.div h1.div
         h2.div h2.div
@@ -173,59 +173,59 @@ include ../lib/main
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        p .scoped p
+        p .foo p
       +div(class="__after")
         p.div p.div
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        figure .scoped figure
+        figure .foo figure
       +div(class="__after")
         figure.div figure.div
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        a(href="#") .scoped a
+        a(href="#") .foo a
       +div(class="__after")
         a(href="#").span a.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        em .scoped em
+        em .foo em
       +div(class="__after")
         em.span em.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        i .scoped i
+        i .foo i
       +div(class="__after")
         i.span i.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        cite .scoped cite
+        cite .foo cite
       +div(class="__after")
         cite.span cite.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
         ol
-          li .scoped ol
-          li .scoped li
+          li .foo ol
+          li .foo li
       +div(class="__after")
         ol.div
           li.div ol.div
@@ -233,11 +233,11 @@ include ../lib/main
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
         ul
-          li .scoped ul
-          li .scoped li
+          li .foo ul
+          li .foo li
       +div(class="__after")
         ul.div
           li.div ul.div
@@ -245,11 +245,11 @@ include ../lib/main
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
         dl
-          dt .scoped dt
-          dd .scoped dd
+          dt .foo dt
+          dd .foo dd
       +div(class="__after")
         dl.div
           dt.div dt.div
@@ -257,33 +257,33 @@ include ../lib/main
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        blockquote .scoped blockquote
+        blockquote .foo blockquote
       +div(class="__after")
         blockquote.div blockquote.div
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        button .scoped button
+        button .foo button
       +div(class="__after")
         button.span button.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        label .scoped label
+        label .foo label
       +div(class="__after")
         label.span label.span
 
     hr
 
-    +div(class="test scoped")
+    +div(class="test foo")
       +div(class="__before")
-        address .scoped address
+        address .foo address
       +div(class="__after")
         address.div address.div
 

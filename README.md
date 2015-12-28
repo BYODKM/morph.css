@@ -66,6 +66,10 @@ Advanced test requires [Stylus](http://stylus-lang.com) support. Which is scoped
 
 - All browsers
 
+## Recommendations
+
+- For the better results, use [normalize.css](https://github.com/necolas/normalize.css) with morph.css.
+
 ## License
 
 - MIT
