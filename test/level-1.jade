@@ -1,0 +1,165 @@
+include ../lib/main
+
+-
+  var site = 'morph.css, Test'
+  var title = " Level 1: Against browsers' default stylesheets"
+
++html
+  +head
+    title=site+title
+
+  body
+
+    h1
+      a(href="./")=site
+      | #{title}
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        h1 h1
+        h2 h2
+        h3 h3
+        h4 h4
+        h5 h5
+        h6 h6
+      +div(class="__after")
+        h1.div h1.div
+        h2.div h2.div
+        h3.div h3.div
+        h4.div h4.div
+        h5.div h5.div
+        h6.div h6.div
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        p p
+      +div(class="__after")
+        p.div p.div
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        figure figure
+      +div(class="__after")
+        figure.div figure.div
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        a(href="#") a
+      +div(class="__after")
+        a(href="#").span a.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        em em
+      +div(class="__after")
+        em.span em.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        i i
+      +div(class="__after")
+        i.span i.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        cite cite
+      +div(class="__after")
+        cite.span cite.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        ol
+          li ol
+          li li
+      +div(class="__after")
+        ol.div
+          li.div ol.div
+          li.div li.div
+          +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        ul
+          li ul
+          li li
+      +div(class="__after")
+        ul.div
+          li.div ul.div
+          li.div li.div
+          +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        dl
+          dt dl
+          dd dd
+      +div(class="__after")
+        dl.div
+          dt.div dl.div
+          dd.div dd.div
+          +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        blockquote blockquote
+      +div(class="__after")
+        blockquote.div blockquote.div
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        button button
+      +div(class="__after")
+        button.span button.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        label label
+      +div(class="__after")
+        label.span label.span
+        +bem(false)
+
+    hr
+
+    +div(class="test")
+      +div(class="__before")
+        address address
+      +div(class="__after")
+        address.div address.div
+        +bem(false)
+
+    hr

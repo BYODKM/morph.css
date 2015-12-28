@@ -1,140 +1,38 @@
-- var normalize = "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"
-- var morph     = "../morph.css"
+include ../lib/main
 
-doctype html
-html
-  head
-    meta(charset="utf-8")
-    title Test | morph.css
-    link(rel="stylesheet" href=normalize)
-    link(rel="stylesheet" href=morph)
-    style
-      :stylus
-        body
-          background-color gray
-        .test
-          width 100%
-          overflow hidden
-        .before
-        .after
-          margin 20px 0
-          width 47%
-          background-color white
-        .before
-          float left
-          margin-right 1%
-          margin-left 2%
-        .after
-          float right
-          margin-right 2%
-          margin-left 1%
+-
+  var tests = [
+    {
+      text: 'Level 1: ',
+      href: 'level-1.html',
+      desc: "Against browsers' default stylesheets"
+    },{
+      text: 'Level 2: ',
+      href: 'level-2.html',
+      desc: "Against authors' reset stylesheet"
+    },{
+      text: 'Level 3: ',
+      href: 'level-3.html',
+      desc: "Against authors' scoped stylesheet",
+      memo: ' (Advanced)'
+    }
+  ]
+
++html
+  +head
+    title morph.css, Test
   body
-    .test
-      .before
-        h1 h1
-        h2 h2
-        h3 h3
-        h4 h4
-        h5 h5
-        h6 h6
-      .after
-        h1.div h1.div
-        h2.div h2.div
-        h3.div h3.div
-        h4.div h4.div
-        h5.div h5.div
-        h6.div h6.div
-
-    .test
-      .before
-        p p
-      .after
-        p.div p.div
-
-    .test
-      .before
-        figure figure
-      .after
-        figure.div figure.div
-
-    .test
-      .before
-        a(href="#") a
-      .after
-        a(href="#").span a.span
-
-    .test
-      .before
-        em em
-      .after
-        em.span em.span
-
-    .test
-      .before
-        i i
-      .after
-        i.span i.span
-
-    .test
-      .before
-        cite cite
-      .after
-        cite.span cite.span
-
-    .test
-      .before
-        ol
-          li ol
-          li li
-      .after
-        ol.div
-          li.div ol.div
-          li.div li.div
-
-    .test
-      .before
-        ul
-          li ul
-          li li
-      .after
-        ul.div
-          li.div ul.div
-          li.div li.div
-
-    .test
-      .before
-        dl
-          dt dl
-          dd dd
-      .after
-        dl.div
-          dt.div dl.div
-          dd.div dd.div
-
-    .test
-      .before
-        blockquote blockquote
-      .after
-        blockquote.div blockquote.div
-
-    .test
-      .before
-        button button
-      .after
-        button.span button.span
-        | &nbsp;
-        button.label button.label
-
-    .test
-      .before
-        label label
-      .after
-        label.span label.span
-        | &nbsp;
-        label.label label.label
-
-    .test
-      .before
-        address address
-      .after
-        address.div address.div
+    h1
+      a(href="https://github.com/internets-inc/morph.css") morph.css
+      | , Test
+    hr
+    ul
+      each test in tests
+        li
+          dl.span
+            dt.span=test.text
+            dd.span
+              a(href=test.href)=test.desc
+              if test.memo
+                | #{test.memo}
+    hr

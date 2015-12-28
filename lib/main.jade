@@ -1,0 +1,29 @@
+include ../bower_components/jade-de-bem/jade-de-bem
+
+mixin html
+
+  doctype html
+  html
+    block
+
+mixin head
+
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="../morph.css")
+    style
+      :stylus
+        body
+          margin 1rem
+        .test
+          clear both
+          width 100%
+          overflow hidden
+          & &__before
+            float left
+            width 50%
+          & &__after
+            float right
+            width 50%
+    block

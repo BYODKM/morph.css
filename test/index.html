@@ -1,166 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Test | morph.css</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="../morph.css">
-    <style>body {
-  background-color: #808080;
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../morph.css"><style>body {
+  margin: 1rem;
 }
 .test {
+  clear: both;
   width: 100%;
   overflow: hidden;
 }
-.before,
-.after {
-  margin: 20px 0;
-  width: 47%;
-  background-color: #fff;
-}
-.before {
+.test .test__before {
   float: left;
-  margin-right: 1%;
-  margin-left: 2%;
+  width: 50%;
 }
-.after {
+.test .test__after {
   float: right;
-  margin-right: 2%;
-  margin-left: 1%;
+  width: 50%;
 }
-
-    </style>
-  </head>
-  <body>
-    <div class="test">
-      <div class="before">
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-        <h5>h5</h5>
-        <h6>h6</h6>
-      </div>
-      <div class="after">
-        <h1 class="div">h1.div</h1>
-        <h2 class="div">h2.div</h2>
-        <h3 class="div">h3.div</h3>
-        <h4 class="div">h4.div</h4>
-        <h5 class="div">h5.div</h5>
-        <h6 class="div">h6.div</h6>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <p>p</p>
-      </div>
-      <div class="after">
-        <p class="div">p.div</p>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <figure>figure</figure>
-      </div>
-      <div class="after">
-        <figure class="div">figure.div</figure>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before"><a href="#">a</a></div>
-      <div class="after"><a href="#" class="span">a.span</a></div>
-    </div>
-    <div class="test">
-      <div class="before"><em>em</em></div>
-      <div class="after"><em class="span">em.span</em></div>
-    </div>
-    <div class="test">
-      <div class="before"><i>i</i></div>
-      <div class="after"><i class="span">i.span</i></div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <cite>cite</cite>
-      </div>
-      <div class="after">
-        <cite class="span">cite.span</cite>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <ol>
-          <li>ol</li>
-          <li>li</li>
-        </ol>
-      </div>
-      <div class="after">
-        <ol class="div">
-          <li class="div">ol.div</li>
-          <li class="div">li.div</li>
-        </ol>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <ul>
-          <li>ul</li>
-          <li>li</li>
-        </ul>
-      </div>
-      <div class="after">
-        <ul class="div">
-          <li class="div">ul.div</li>
-          <li class="div">li.div</li>
-        </ul>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <dl>
-          <dt>dl</dt>
-          <dd>dd</dd>
-        </dl>
-      </div>
-      <div class="after">
-        <dl class="div">
-          <dt class="div">dl.div</dt>
-          <dd class="div">dd.div</dd>
-        </dl>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <blockquote>blockquote</blockquote>
-      </div>
-      <div class="after">
-        <blockquote class="div">blockquote.div</blockquote>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <button>button</button>
-      </div>
-      <div class="after">
-        <button class="span">button.span</button>&nbsp;
-        <button class="label">button.label</button>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <label>label</label>
-      </div>
-      <div class="after">
-        <label class="span">label.span</label>&nbsp;
-        <label class="label">label.label</label>
-      </div>
-    </div>
-    <div class="test">
-      <div class="before">
-        <address>address</address>
-      </div>
-      <div class="after">
-        <address class="div">address.div</address>
-      </div>
-    </div>
-  </body>
-</html>
+</style><title>morph.css, Test</title></head><body><h1><a href="https://github.com/internets-inc/morph.css">morph.css</a>, Test</h1><hr><ul><li><dl class="span"><dt class="span">Level 1: </dt><dd class="span"><a href="level-1.html">Against browsers' default stylesheets</a></dd></dl></li><li><dl class="span"><dt class="span">Level 2: </dt><dd class="span"><a href="level-2.html">Against authors' reset stylesheet</a></dd></dl></li><li><dl class="span"><dt class="span">Level 3: </dt><dd class="span"><a href="level-3.html">Against authors' scoped stylesheet</a> (Advanced)</dd></dl></li></ul><hr></body></html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../morph.css"><style>body {
+  margin: 1rem;
+}
+.test {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+}
+.test .test__before {
+  float: left;
+  width: 50%;
+}
+.test .test__after {
+  float: right;
+  width: 50%;
+}
+</style><title>morph.css, Test Level 3: Against authors' scoped stylesheets (Advanced)</title><style>.scoped .span {
+  display: inline;
+}
+.scoped .div {
+  display: block;
+}
+.scoped .span:before,
+.scoped .div:before,
+.scoped .span:after,
+.scoped .div:after {
+  content: none;
+  display: inline;
+}
+.scoped .span,
+.scoped .div,
+.scoped .span:hover,
+.scoped .div:hover,
+.scoped .span:visited,
+.scoped .div:visited,
+.scoped .span:active,
+.scoped .div:active,
+.scoped .span:nth-child(n),
+.scoped .div:nth-child(n),
+.scoped .span:before,
+.scoped .div:before,
+.scoped .span:after,
+.scoped .div:after,
+.scoped .span:first-letter,
+.scoped .div:first-letter,
+.scoped .span:first-line,
+.scoped .div:first-line {
+  clear: none;
+  float: none;
+  position: static;
+  z-index: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  min-width: 0;
+  min-height: 0;
+  overflow: visible;
+  visibility: visible;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: normal;
+  text-align: inherit;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  line-height: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  background: none;
+  box-shadow: none;
+  transition: none;
+}
+.scoped h2 {
+  margin: 1em 20px 0.5em 0;
+  padding: 15px 15px 15px 15%;
+  border-radius: 0 10px 0 10px;
+  color: #355681;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  background-color: #f5f5f5;
+}
+.scoped h3 {
+  margin: 1em 20px 0.5em 0;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  border-radius: 0 10px 0 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  text-shadow: 0 -1px rgba(0,0,0,0.6);
+  line-height: 40px;
+  background: #355681;
+}
+.scoped h4 {
+  margin: 1em 20px 0.5em 0;
+  border-bottom: 1px solid rgba(53,86,129,0.3);
+  color: #355681;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.scoped h5 {
+  margin: 1em 20px 0.5em 0;
+  color: #788699;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.scoped p {
+  margin: 1.5em 0;
+  padding: 0 1em;
+  font-size: 1.75em;
+  line-height: 2;
+}
+.scoped figure {
+  border: 1px solid #c0c0c0;
+  padding: 0.5em;
+}
+.scoped a {
+  color: #00f;
+  text-decoration: none;
+}
+.scoped a:hover {
+  text-decoration: underline;
+}
+.scoped a:active {
+  color: #f00;
+}
+.scoped em {
+  font-weight: bold;
+}
+.scoped cite {
+  color: #808080;
+}
+.scoped ol li {
+  margin-top: 1em;
+}
+.scoped ol li:first-child {
+  margin-top: 2em;
+}
+.scoped ul li {
+  position: relative;
+  list-style: none;
+}
+.scoped ul li:before {
+  position: absolute;
+  top: 0.5em;
+  left: -1.25em;
+  content: "";
+  display: block;
+  border-radius: 3px;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+  background-color: #c0c0c0;
+}
+.scoped dt {
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.scoped dd {
+  display: list-item;
+  list-style: circle;
+  font-size: 1.25em;
+}
+.scoped blockquote {
+  margin-left: 1em;
+  padding: 1em;
+  border-left: 4px solid #c0c0c0;
+  color: #808080;
+  font-size: 2em;
+  font-style: italic;
+}
+.scoped button {
+  border: 1px solid #00f;
+  border-radius: 4px;
+  padding: 0.25em 0.75em;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: #00f;
+}
+.scoped button:hover {
+  border: 1px solid #00f;
+  color: #00f;
+  background-color: #fff;
+}
+.scoped button:active {
+  position: relative;
+  top: 1px;
+}
+.scoped label {
+  font-weight: bold;
+}
+.scoped address {
+  color: #808080;
+}
+</style></head><body><h1><a href="./">morph.css, Test</a> Level 3: Against authors' scoped stylesheets (<a href="https://github.com/internets-inc/morph.css/#tests">Advanced</a>)</h1><hr><div class="test scoped"><div class="test__before"><h1>.scoped h1</h1><h2>.scoped h2</h2><h3>.scoped h3</h3><h4>.scoped h4</h4><h5>.scoped h5</h5><h6>.scoped h6</h6></div><div class="test__after"><h1 class="div">h1.div</h1><h2 class="div">h2.div</h2><h3 class="div">h3.div</h3><h4 class="div">h4.div</h4><h5 class="div">h5.div</h5><h6 class="div">h6.div</h6></div></div><hr><div class="test scoped"><div class="test__before"><p>.scoped p</p></div><div class="test__after"><p class="div">p.div</p></div></div><hr><div class="test scoped"><div class="test__before"><figure>.scoped figure</figure></div><div class="test__after"><figure class="div">figure.div</figure></div></div><hr><div class="test scoped"><div class="test__before"><a href="#">.scoped a</a></div><div class="test__after"><a href="#" class="span">a.span</a></div></div><hr><div class="test scoped"><div class="test__before"><em>.scoped em</em></div><div class="test__after"><em class="span">em.span</em></div></div><hr><div class="test scoped"><div class="test__before"><i>.scoped i</i></div><div class="test__after"><i class="span">i.span</i></div></div><hr><div class="test scoped"><div class="test__before"><cite>.scoped cite</cite></div><div class="test__after"><cite class="span">cite.span</cite></div></div><hr><div class="test scoped"><div class="test__before"><ol><li>.scoped ol</li><li>.scoped li</li></ol></div><div class="test__after"><ol class="div"><li class="div">ol.div</li><li class="div">li.div</li></ol></div></div><hr><div class="test scoped"><div class="test__before"><ul><li>.scoped ul</li><li>.scoped li</li></ul></div><div class="test__after"><ul class="div"><li class="div">ul.div</li><li class="div">li.div</li></ul></div></div><hr><div class="test scoped"><div class="test__before"><dl><dt>.scoped dt</dt><dd>.scoped dd</dd></dl></div><div class="test__after"><dl class="div"><dt class="div">dt.div</dt><dd class="div">dd.div</dd></dl></div></div><hr><div class="test scoped"><div class="test__before"><blockquote>.scoped blockquote</blockquote></div><div class="test__after"><blockquote class="div">blockquote.div</blockquote></div></div><hr><div class="test scoped"><div class="test__before"><button>.scoped button</button></div><div class="test__after"><button class="span">button.span</button></div></div><hr><div class="test scoped"><div class="test__before"><label>.scoped label</label></div><div class="test__after"><label class="span">label.span</label></div></div><hr><div class="test scoped"><div class="test__before"><address>.scoped address</address></div><div class="test__after"><address class="div">address.div</address></div></div><hr></body></html>
