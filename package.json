@@ -1,22 +1,18 @@
 {
   "name": "morph.css",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run build & npm run watch & npm run sync",
-    "jade": "jade -p ./ ./test/index.jade -o ./test/ -P",
-    "stylus": "stylus ./src/morph.styl -o ./morph.css",
-    "build": "npm run jade & npm run stylus",
-    "watch:jade": "chokidar ./test/index.jade -c 'npm run build'",
-    "watch:stylus": "chokidar ./src/morph.styl -c 'npm run stylus'",
-    "watch": "npm run watch:jade & npm run watch:stylus",
-    "sync": "browser-sync start --server --startPath ./test/ --files './test/index.html, ./morph.css' --no-notify"
+    "start": "npm run watch & npm run sync",
+    "jade": "jade -H -p . -w test -o test",
+    "stylus": "stylus -w ./src/morph.styl -o ./morph.css",
+    "watch": "npm run jade & npm run stylus",
+    "sync": "browser-sync start --server --startPath test --files './test/**/*.html, ./morph.css' --no-notify"
   },
   "author": "Tomohiro Kasuga <tk@internets.co.jp>",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "~2.10.1",
-    "chokidar-cli": "~1.1.0",
     "jade": "~1.11.0",
     "jstransformer-stylus": "~1.0.0",
     "stylus": "~0.53.0"

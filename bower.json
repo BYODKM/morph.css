@@ -5,17 +5,19 @@
     "morph.css"
   ],
   "ignore": [
-    "node_modules",
     "test",
     ".editorconfig",
     ".gitignore",
     "package.json"
   ],
   "repository": {
-  "type": "git",
-  "url": "https://github.com/internets-inc/morph.css.git"
+    "type": "git",
+    "url": "https://github.com/internets-inc/morph.css.git"
   },
   "authors": [
     "Tomohiro Kasuga <tk@internets.co.jp>"
-  ]
+  ],
+  "devDependencies": {
+    "jade-de-bem": "~1.0.1"
+  }
 }
