@@ -35,7 +35,7 @@ You wrote `a` tag, but it looks like `span`.
 
 ### Components:
 
-You can use semantic tags, but they act like non-semantics.
+You can use semantic tags, but they looks like non-semantics.
 
 ```html
 <div clas="your-component">
@@ -65,10 +65,6 @@ Advanced test requires [Stylus](http://stylus-lang.com) support. Which is scoped
 ## Supported Browsers
 
 - All browsers
-
-## Recommendations
-
-- For the better results, use [normalize.css](https://github.com/necolas/normalize.css) with morph.css.
 
 ## License
 
