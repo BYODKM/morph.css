@@ -5,6 +5,7 @@
     "morph.css"
   ],
   "ignore": [
+    "lib",
     "test",
     ".editorconfig",
     ".gitignore",
