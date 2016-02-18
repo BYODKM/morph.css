@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run watch & npm run sync",
+    "travis": "stylus < ./src/morph.styl > ./morph.css && jade test -o test -P -H",
     "jade": "jade -w test -o test -P -H",
     "stylus": "stylus -w ./src/morph.styl -o ./morph.css",
     "watch": "npm run jade & npm run stylus",
