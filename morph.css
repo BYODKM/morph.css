@@ -19,14 +19,12 @@
 .div:visited,
 .span:active,
 .div:active,
-.span:nth-child(n),
-.div:nth-child(n),
 .span:before,
 .div:before,
 .span:after,
 .div:after,
-.span:first-letter,
-.div:first-letter {
+.span:nth-child(n),
+.div:nth-child(n) {
   clear: none;
   float: none;
   position: static;

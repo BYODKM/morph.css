@@ -12,11 +12,6 @@
 
 - [nondestructive-reset.css](https://github.com/BYODKM/nondestructive-reset.css)
 
-## Install morph.css
-
-- Download [master.zip](https://github.com/internets-inc/morph.css/archive/master.zip)
-- or `$ bower install morph.css`
-
 ## Usage
 
 ### Basics:
@@ -49,7 +44,12 @@ You can use semantic tags, but they looks like non-semantics.
 </div>
 ```
 
-## Tests
+## Install morph.css
+
+- Download [master.zip](https://github.com/internets-inc/morph.css/archive/master.zip)
+- or `$ bower install morph.css`
+
+## Test Results
 
 - Level 1: [Against browsers' default styles](http://internets-inc.github.io/morph.css/test/level-1.html)
 - Level 2: [Against authors' reset styles](http://internets-inc.github.io/morph.css/test/level-2.html)
@@ -59,7 +59,7 @@ Advanced test requires [Stylus](http://stylus-lang.com) support. Which is scoped
 
 ```stylus
 .your-scope
-  @import "/path/to/bower_components/morph.css/src/morph"
+  @import "path/to/morph.css/src/morph"
 ```
 
 ## Supported Browsers

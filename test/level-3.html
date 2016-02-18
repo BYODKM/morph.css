@@ -1,4 +1,9 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>body {
   margin: 1rem;
 }
 .test {
@@ -14,7 +19,10 @@
   float: right;
   width: 50%;
 }
-</style><title>morph.css, Test Level 3: Against authors' scoped styles (Advanced)</title><style>.foo .span {
+
+    </style>
+    <title>morph.css Test Level 3: Against authors' scoped styles (Advanced)</title>
+    <style>.foo .span {
   display: inline;
 }
 .foo .div {
@@ -35,14 +43,12 @@
 .foo .div:visited,
 .foo .span:active,
 .foo .div:active,
-.foo .span:nth-child(n),
-.foo .div:nth-child(n),
 .foo .span:before,
 .foo .div:before,
 .foo .span:after,
 .foo .div:after,
-.foo .span:first-letter,
-.foo .div:first-letter {
+.foo .span:nth-child(n),
+.foo .div:nth-child(n) {
   clear: none;
   float: none;
   position: static;
@@ -54,9 +60,9 @@
   box-sizing: content-box;
   margin: 0;
   padding: 0;
+  border-radius: 0;
   border: none;
   outline: none;
-  border-radius: 0;
   width: auto;
   height: auto;
   max-width: none;
@@ -69,19 +75,19 @@
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  font-style: normal;
   text-align: inherit;
-  text-decoration: none;
-  text-indent: 0;
-  text-shadow: none;
-  text-transform: none;
+  text-transform: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+  font-style: normal;
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
   letter-spacing: normal;
   white-space: normal;
-  line-height: inherit;
-  vertical-align: baseline;
+  text-indent: 0;
+  text-decoration: none;
+  text-shadow: none;
   list-style: none;
   background: none;
   box-shadow: none;
@@ -219,4 +225,160 @@
 .foo address {
   color: #808080;
 }
-</style></head><body><h1><a href="./">morph.css, Test</a> Level 3: Against authors' scoped styles (<a href="https://github.com/internets-inc/morph.css/#tests">Advanced</a>)</h1><hr><div class="test foo"><div class="test__before"><h1>.foo h1</h1><h2>.foo h2</h2><h3>.foo h3</h3><h4>.foo h4</h4><h5>.foo h5</h5><h6>.foo h6</h6></div><div class="test__after"><h1 class="div">h1.div</h1><h2 class="div">h2.div</h2><h3 class="div">h3.div</h3><h4 class="div">h4.div</h4><h5 class="div">h5.div</h5><h6 class="div">h6.div</h6></div></div><hr><div class="test foo"><div class="test__before"><p>.foo p</p></div><div class="test__after"><p class="div">p.div</p></div></div><hr><div class="test foo"><div class="test__before"><figure>.foo figure</figure></div><div class="test__after"><figure class="div">figure.div</figure></div></div><hr><div class="test foo"><div class="test__before"><a href="#">.foo a</a></div><div class="test__after"><a href="#" class="span">a.span</a></div></div><hr><div class="test foo"><div class="test__before"><em>.foo em</em></div><div class="test__after"><em class="span">em.span</em></div></div><hr><div class="test foo"><div class="test__before"><i>.foo i</i></div><div class="test__after"><i class="span">i.span</i></div></div><hr><div class="test foo"><div class="test__before"><cite>.foo cite</cite></div><div class="test__after"><cite class="span">cite.span</cite></div></div><hr><div class="test foo"><div class="test__before"><ol><li>.foo ol</li><li>.foo li</li></ol></div><div class="test__after"><ol class="div"><li class="div">ol.div</li><li class="div">li.div</li></ol></div></div><hr><div class="test foo"><div class="test__before"><ul><li>.foo ul</li><li>.foo li</li></ul></div><div class="test__after"><ul class="div"><li class="div">ul.div</li><li class="div">li.div</li></ul></div></div><hr><div class="test foo"><div class="test__before"><dl><dt>.foo dt</dt><dd>.foo dd</dd></dl></div><div class="test__after"><dl class="div"><dt class="div">dt.div</dt><dd class="div">dd.div</dd></dl></div></div><hr><div class="test foo"><div class="test__before"><blockquote>.foo blockquote</blockquote></div><div class="test__after"><blockquote class="div">blockquote.div</blockquote></div></div><hr><div class="test foo"><div class="test__before"><button>.foo button</button></div><div class="test__after"><button class="span">button.span</button></div></div><hr><div class="test foo"><div class="test__before"><label>.foo label</label></div><div class="test__after"><label class="span">label.span</label></div></div><hr><div class="test foo"><div class="test__before"><address>.foo address</address></div><div class="test__after"><address class="div">address.div</address></div></div><hr></body></html>
+
+    </style>
+  </head>
+  <body>
+    <h1><a href="./">morph.css Test</a> Level 3: Against authors' scoped styles (<a href="https://github.com/internets-inc/morph.css/#tests">Advanced</a>)
+    </h1>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <h1>.foo h1</h1>
+        <h2>.foo h2</h2>
+        <h3>.foo h3</h3>
+        <h4>.foo h4</h4>
+        <h5>.foo h5</h5>
+        <h6>.foo h6</h6>
+      </div>
+      <div class="test__after">
+        <h1 class="div">h1.div</h1>
+        <h2 class="div">h2.div</h2>
+        <h3 class="div">h3.div</h3>
+        <h4 class="div">h4.div</h4>
+        <h5 class="div">h5.div</h5>
+        <h6 class="div">h6.div</h6>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <p>.foo p</p>
+      </div>
+      <div class="test__after">
+        <p class="div">p.div</p>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <figure>.foo figure</figure>
+      </div>
+      <div class="test__after">
+        <figure class="div">figure.div</figure>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before"><a href="#">.foo a</a>
+      </div>
+      <div class="test__after"><a href="#" class="span">a.span</a>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before"><em>.foo em</em>
+      </div>
+      <div class="test__after"><em class="span">em.span</em>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before"><i>.foo i</i>
+      </div>
+      <div class="test__after"><i class="span">i.span</i>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <cite>.foo cite</cite>
+      </div>
+      <div class="test__after">
+        <cite class="span">cite.span</cite>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <ol>
+          <li>.foo ol</li>
+          <li>.foo li</li>
+        </ol>
+      </div>
+      <div class="test__after">
+        <ol class="div">
+          <li class="div">ol.div</li>
+          <li class="div">li.div</li>
+        </ol>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <ul>
+          <li>.foo ul</li>
+          <li>.foo li</li>
+        </ul>
+      </div>
+      <div class="test__after">
+        <ul class="div">
+          <li class="div">ul.div</li>
+          <li class="div">li.div</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <dl>
+          <dt>.foo dt</dt>
+          <dd>.foo dd</dd>
+        </dl>
+      </div>
+      <div class="test__after">
+        <dl class="div">
+          <dt class="div">dt.div</dt>
+          <dd class="div">dd.div</dd>
+        </dl>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <blockquote>.foo blockquote</blockquote>
+      </div>
+      <div class="test__after">
+        <blockquote class="div">blockquote.div</blockquote>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <button>.foo button</button>
+      </div>
+      <div class="test__after">
+        <button class="span">button.span</button>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <label>.foo label</label>
+      </div>
+      <div class="test__after">
+        <label class="span">label.span</label>
+      </div>
+    </div>
+    <hr>
+    <div class="test foo">
+      <div class="test__before">
+        <address>.foo address</address>
+      </div>
+      <div class="test__after">
+        <address class="div">address.div</address>
+      </div>
+    </div>
+    <hr>
+  </body>
+</html>
