@@ -15,6 +15,9 @@ before_install:
   - chmod 600 ~/.ssh/deploy.key
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
   - rm .gitignore && cp deploy_git.ignore .gitignore
+before_script:
+  - npm install -g bower
+  - bower install
 after_success:
   - git --version
   - git config user.name "TRAVIS"
