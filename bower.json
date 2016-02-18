@@ -17,5 +17,8 @@
   },
   "authors": [
     "Tomohiro Kasuga <tk@internets.co.jp>"
-  ]
+  ],
+   "devDependencies": {
+     "jade-de-bem": "~1.0.2"
+   }
 }
