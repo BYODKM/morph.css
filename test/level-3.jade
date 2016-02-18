@@ -113,6 +113,9 @@ include ../lib/main
             list-style circle
             font-size 1.25em
 
+            &:first-of-type
+              font-style italic
+
           blockquote
             margin-left 1em
             padding 1em
@@ -294,10 +297,14 @@ include ../lib/main
             | .foo dt
           dd
             | .foo dd
+          dd
+            | .foo dd
       +div(class="__after")
         dl.div
           dt.div
             | dt.div
+          dd.div
+            | dd.div
           dd.div
             | dd.div
       +bem(false)
