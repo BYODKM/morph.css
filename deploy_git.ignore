@@ -1,9 +1,8 @@
-*.jade
-
 bower_components
 lib
 node_modules
 src
+test/*.jade
 
 .editorconfig
 .gitignore
