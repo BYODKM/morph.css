@@ -1,7 +1,24 @@
 {
   "name": "morph.css",
   "version": "1.2.2",
-  "private": true,
+  "description": "The Latest Greatest Reset CSS",
+  "style": "morph.css",
+  "files": [
+    "src/morph.styl",
+    "LICENSE",
+    "morph.css"
+  ],
+  "homepage": "https://github.com/internets-inc/morph.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/internets-inc/morph.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/internets-inc/morph.css/issues"
+  },
+  "main": "morph.css",
+  "author": "Tomohiro Kasuga <tk@internets.co.jp>",
+  "license": "MIT",
   "scripts": {
     "start": "npm run watch & npm run sync",
     "travis": "stylus < ./src/morph.styl > ./morph.css && jade test -o test -P -H",
@@ -10,8 +27,6 @@
     "watch": "npm run jade & npm run stylus",
     "sync": "browser-sync start --server --startPath test --files './test/**/*.html, ./morph.css' --no-notify"
   },
-  "author": "Tomohiro Kasuga <tk@internets.co.jp>",
-  "license": "MIT",
   "devDependencies": {
     "browser-sync": "~2.10.1",
     "jade": "~1.11.0",
