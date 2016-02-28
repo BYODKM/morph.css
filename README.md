@@ -1,3 +1,4 @@
+[![NPM](https://nodei.co/npm/morph.css.png?mini=true)](https://nodei.co/npm/morph.css/)
 [![Build Status](https://travis-ci.org/internets-inc/morph.css.svg?branch=master)](https://travis-ci.org/internets-inc/morph.css)
 
 # morph.css
