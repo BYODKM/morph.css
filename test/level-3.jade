@@ -12,6 +12,14 @@ include ../lib/main
         .foo
           @import "../src/morph"
 
+          h1
+            margin 1em 20px 0.5em 0
+            font-family sans-serif
+            font-weight bold
+            font-size 36px
+            font-style italic
+            line-height 40px
+
           h2
             margin 1em 20px 0.5em 0
             padding 15px 15px 15px 15%
@@ -175,17 +183,17 @@ include ../lib/main
           | .foo h6
       +div(class="__after")
         h1.div
-          | h1.div
+          | .foo h1.div
         h2.div
-          | h2.div
+          | .foo h2.div
         h3.div
-          | h3.div
+          | .foo h3.div
         h4.div
-          | h4.div
+          | .foo h4.div
         h5.div
-          | h5.div
+          | .foo h5.div
         h6.div
-          | h6.div
+          | .foo h6.div
       +bem(false)
 
     hr
@@ -196,7 +204,7 @@ include ../lib/main
           | .foo p
       +div(class="__after")
         p.div
-          | p.div
+          | .foo p.div
       +bem(false)
 
     hr
@@ -207,7 +215,7 @@ include ../lib/main
           | .foo figure
       +div(class="__after")
         figure.div
-          | figure.div
+          | .foo figure.div
       +bem(false)
 
     hr
@@ -218,7 +226,7 @@ include ../lib/main
           | .foo a
       +div(class="__after")
         a(href="#").span
-          | a.span
+          | .foo a.span
       +bem(false)
 
     hr
@@ -229,7 +237,7 @@ include ../lib/main
           | .foo em
       +div(class="__after")
         em.span
-          | em.span
+          | .foo em.span
       +bem(false)
 
     hr
@@ -240,7 +248,7 @@ include ../lib/main
           | .foo i
       +div(class="__after")
         i.span
-          | i.span
+          | .foo i.span
       +bem(false)
 
     hr
@@ -251,7 +259,7 @@ include ../lib/main
           | .foo cite
       +div(class="__after")
         cite.span
-          | cite.span
+          | .foo cite.span
       +bem(false)
 
     hr
@@ -266,9 +274,9 @@ include ../lib/main
       +div(class="__after")
         ol.div
           li.div
-            | ol.div
+            | .foo ol.div
           li.div
-            | li.div
+            | .foo li.div
       +bem(false)
 
     hr
@@ -283,9 +291,9 @@ include ../lib/main
       +div(class="__after")
         ul.div
           li.div
-            | ul.div
+            | .foo ul.div
           li.div
-            | li.div
+            | .foo li.div
       +bem(false)
 
     hr
@@ -302,11 +310,11 @@ include ../lib/main
       +div(class="__after")
         dl.div
           dt.div
-            | dt.div
+            | .foo dt.div
           dd.div
-            | dd.div
+            | .foo dd.div
           dd.div
-            | dd.div
+            | .foo dd.div
       +bem(false)
 
     hr
@@ -317,7 +325,7 @@ include ../lib/main
           | .foo blockquote
       +div(class="__after")
         blockquote.div
-          | blockquote.div
+          | .foo blockquote.div
       +bem(false)
 
     hr
@@ -328,7 +336,7 @@ include ../lib/main
           | .foo button
       +div(class="__after")
         button.span
-          | button.span
+          | .foo button.span
       +bem(false)
 
     hr
@@ -339,7 +347,7 @@ include ../lib/main
           | .foo label
       +div(class="__after")
         label.span
-          | label.span
+          | .foo label.span
       +bem(false)
 
     hr
@@ -350,7 +358,7 @@ include ../lib/main
           | .foo address
       +div(class="__after")
         address.div
-          | address.div
+          | .foo address.div
       +bem(false)
 
     hr
