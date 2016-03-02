@@ -1,4 +1,5 @@
-[![NPM](https://nodei.co/npm/morph.css.png?mini=true)](https://nodei.co/npm/morph.css/)
+[![Version](https://img.shields.io/npm/v/morph.css.svg)](https://www.npmjs.com/package/morph.css)
+[![License](https://img.shields.io/npm/l/morph.css.svg)](https://github.com/internets-inc/morph.css/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/internets-inc/morph.css.svg?branch=master)](https://travis-ci.org/internets-inc/morph.css)
 
 # morph.css
