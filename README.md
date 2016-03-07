@@ -50,8 +50,20 @@ You can use semantic tags, but they looks like non-semantics.
 
 ## Install morph.css
 
-- Download [master.zip](https://github.com/internets-inc/morph.css/archive/master.zip)
-- or `$ bower install morph.css`
+### npm
+
+```
+$ npm install morph.css --save
+```
+
+### bower
+
+```
+$ bower install morph.css
+```
+
+### Download
+- [master.zip](https://github.com/internets-inc/morph.css/archive/master.zip)
 
 ## Test Results
 
