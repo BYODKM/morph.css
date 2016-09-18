@@ -1,0 +1,80 @@
+.span {
+  display: inline;
+}
+.div {
+  display: block;
+}
+.span:before,
+.div:before,
+.span:after,
+.div:after {
+  content: none;
+  display: inline;
+}
+.span,
+.div,
+.span:hover,
+.div:hover,
+.span:visited,
+.div:visited,
+.span:active,
+.div:active,
+.span:before,
+.div:before,
+.span:after,
+.div:after,
+.span:nth-child(n),
+.div:nth-child(n) {
+  clear: none;
+  float: none;
+  position: static;
+  z-index: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  outline-width: 0;
+  border-width: 0;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  max-width: none;
+  max-height: none;
+  resize: none;
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-indent: inherit;
+  text-transform: inherit;
+  text-shadow: inherit;
+  line-height: inherit;
+  vertical-align: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  word-wrap: inherit;
+  word-break: inherit;
+  white-space: inherit;
+  direction: inherit;
+  cursor: inherit;
+  pointer-events: inherit;
+  list-style: none;
+  background: none;
+  box-shadow: none;
+  transition: none;
+  animation: none;
+}
+
